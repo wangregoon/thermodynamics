@@ -1,5 +1,84 @@
 \chapter{The Basic Concepts}
 \section{Thermodynamic Systems}
+
+\begin{enumerate}
+\item[$\bullet$] \tb{Isolated systems} do not exchange energy or matter with the exterior.
+\item[$\bullet$] \tb{Closed systems} exchange energy with the exterior but not matter.
+\item[$\bullet$] \tb{Open systems} exchange both energy and matter with the exeterior.
+\end{enumerate}
+
+The \tb{state} of a system is specified in terms of macroscopic \tb{state variables} such as volume V, pressure p, termperature T,
+mole number of the chemical constiuents $N_k$. The two laws of thermodynamics are founded on the concepts of energy U, and entropy
+S, which are \tb{functions of state variables}. It is convenient to classify thermodynamic variables into two categories: variables
+such as volume and mole number, which are proportional to the size of the system, are called \tb{extensive variables}. Variables
+such as temperature T and pressure p, that specify a local property, which are independt of the size of the system, are called \tb{
+intensive variables}. If the temperature is not uniform, heat will flow until the entire system reaches a state of uniform 
+temperature, the state of \tb{thermal equilibrium}.
+
+In the state of thermal equilibrium, the values of total interal energy U and entropy S are specified by 
+\begin{equation}
+U=U(T,V,N_k), S=S(T,V,N_k)
+\end{equation}
+The value of extensive variable can also be specified by other extensive variables:
+\begin{equation}
+U=U(S,V,N_k), S=S(U,V,N_k)
+\end{equation}
+Intensive variables can be expressed as derivatives of one extensive variable with respect to anouther. For example, $T=\left(
+\partial U/\partial S\right)_{V,N_k}$
+
 \section{Equilibrium and Nonequilibrium Systems}
+If a physical system is isolated, its state evolves \ti{irreversibly} towards a time-invariant state in which we see no further
+physcial or chemical change in the system. It is a state characterized by a uniform temperature throughout the system. This is the
+state of \tb{thermodynamic equilibrium}.
+
+The evolution of a state of a state towards the sate of equilibrium is due to irreversible process. At equilibrium, these processes 
+vanish. Thus, a nonequilibrum state can be characterized as a state in which irreversible processes drive the system to the state
+of equilibrium.  
+
+If a system A is in equilibrium with system B and if B is in equilibrium with system C, then it follows that A is in equilibrium 
+with C. This "transitivity" of the state of equilibrium is some times called the \tb{zeroth law}. Thus, equilibrium systems have
+one uniform temperature and for these systems there exist state functions of energy and entropy. Uniformity of temperature, however,
+is not a requirement for the entropy or energy of a system to be well defined. For \tb{nonequilibrium systems} in which the 
+temperature is not uniform but is well defined locally, we can define density of thermodynamic quantities such as energy and entropy.
+Thun the system's energy and entropy can be expressed as $S=\int_Vs(T(x),n_k(x))dV, U=\int_Vu(T(x),n_k(x))dV,N=\int_Vn_k(x)dV$. So
+in nonuniform systems, the total energy U is no longer a functions of other extensive variables such as S, V and N.
+
 \section{Temperature, Heat and Quantitative Laws of Gases}
+\begin{definition}
+\tb{1Pa}=1N$\mathrm{m}^{-2}$, \tb{1bar}=$10^5$\tb{Pa}, (T/K)=(T/ \textcelsius ) + 273.15
+\end{definition}
+\tb{Heat} was initially thought to be an indestructible substance called the \tb{caloric}. However, in the 19th century it was establised
+that heat was not an indestructable caloric but a form of energy that can convert to other froms. However, we still use \tb{caloric} to 
+measure heat.
+
+A series of experiments setup up the \tb{law of ideal gases} $pV=NRT, R=8.31441JK^{-1}mol^{-1}$. For a mixture of ideal gases we have the
+\tb{Dalton law of partial pressures}, if $p_k$ is the partial pressure due to component k, then $p_kV=N_kRT$. Since a gas expanding into
+vacuum does not do any work during the processes of expansion, its energy does not change. The fact that temperature does not change 
+during this expansion into vacuum while the volume and pressure do change, implies that the energy of a given amount of ideal gas depends
+only on its temperature, not on volume or presure. Thus the energy of the ideal gas can be written as $U(T,N)=NU_m(T)$, which $U_m$ is the
+total internal energy per mole which can be expressed as $U_m=cRT+U_0$, where $U_0$ is constant, for monatomic gases such as He and Ar,
+c=3/2, for diatomic gases such as $N_2,O_2$, c=5/2. In the ideal gas equation, the volume of ideal gas can be compressed to infinite small.
+However, it is contradiction to physical intuition. In 1873, van der Waals proposed an equation in which he incorporated the effects of
+attractive forces between molecules and molecular size on the pressure and volume of gas. 
+\begin{equation}
+(p+aN^2/V^2)(V-Nb)=NRT
+\end{equation}
+
 \section{States of Matter and the van der Walls Equation}
+In thermodynamics the various states of matter - solid, liquid, gas - are often refered to as \tb{phases}. Joseph Black and James Watt 
+discovered another interesting phenomenon associated with the changes of phase: at the melting or the boiling temperature, the heat supplied
+to a system does not produce an increase in temperature; it only converts the substance from one phase to another. The van der Waals equation 
+also exhibits a \tb{critical temperature} $T_c$: if the temperature T is greater than $T_c$ the p-V curve is always single-valued,
+indicateing there is no transition to the liquid state. The van der Waals equation has two extrema for $T<T_c$. Below $T_c$, as T increases,
+these two extrema move closer and finally coalesce at $T=T_c$. Above the ciritical temperature there is no phase transition from a gas to a liquid.
+The pressure and volume at which this happens are called the \tb{critical pressure} $p_c$ and \tb{critical volume} $V_c$. We note that if
+we regard $p(v,T)$ as function of V, then at the cirtical point $T=T_c,p=p_c,V=V_c$. We have an inflection point, for the first and second
+derivatives vanish. 
+\begin{equation}
+\left(\frac{\partial p}{\partial V}\right)_T=0 \qquad \left(\frac{\partial^2 p}{\partial V^2}\right)_T=0
+%\(\frac{\partial p}{\partial V}\)_T=0 \qquad \(\frac{\partial^2 p}{\partial V^2}\)_T=0
+\end{equation}
+The solution is expressed as follows
+\begin{equation}
+T_c=\frac{8a}{27Rb}\qquad p_c=\frac{a}{27b^2}\qquad V_mc=3b
+\end{equation}
